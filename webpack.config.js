@@ -4,13 +4,13 @@ const config = {
       path: `${__dirname}/public/js/`,
       filename: 'bundle.js'
     },
+    mode: 'development',
     resolve: {
-      alias: {
-        'vue$': 'vue/dist/vue.esm.js'
-      },
-      extensions: ['*', '.js', '.vue', '.json']
-    },
-    mode: 'development'
+        alias: {
+            'vue$': 'vue/dist/vue.esm.js'
+        },
+        extensions: ['*', '.js', '.vue', '.json']
+    }
   };
   
   module.exports = config;
